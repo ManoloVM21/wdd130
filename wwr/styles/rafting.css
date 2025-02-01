@@ -11,6 +11,10 @@
     margin-left: 5px;
 }
 
+div {
+    display: flex;
+}
+
 header{
     text-align: left;
     padding: 1em 0;
