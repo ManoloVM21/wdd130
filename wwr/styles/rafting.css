@@ -10,46 +10,70 @@
 *{
     margin-left: 5px;
 }
-
-div {
-    display: flex;
-}
-
 header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:center;
     text-align: left;
     padding: 1em 0;
+    background-color: #A44A3F;
 }
-.hero h1{
-    position: absolute;
-    text-align: center;
-    color: rgb(234, 234, 234);
-    background-color: rgba(0,0,0,0.5);
-    width: 75%;
+header img{
+    justify-self: center;
+}
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
 }
 
-.hero img{
-    width: 75%;
-    left: 50%;
+main{
+    background-color: #94A89A;
+    margin-bottom: 0px;
+}
+.Rafting {
+    width: 100%;
     display: block;
-    object-fit: cover;
+}
+.hero {
+    position: relative;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.hero h1{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(234, 234, 234);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.Rafting{
+    position: relative;
+    max-width: max-content;
+    height: auto;
 }
 
 article{
     position: absolute;
-    top: 70%;
-    left: 45%;
-    transform: translate(-50%,-50%);
+    top: 20%;
+    max-width: max-content;
+    float: inline-start;
     font-size: 1em;
     color: white;
     background-color: rgba(0,0,0,0.5);
     padding: 1em;
-    text-align: left;
+    object-fit: cover;
+} 
+article img{
+    float: right;
+    width:300px;
 }
 
-.overlay-stuff{
-    width:40%;
-    text-align: left;
-}
 
 .article h1{
     font-family: 'Freckle Face';
@@ -69,16 +93,74 @@ h2{
 section{
     margin-bottom: 10px;
 }
-section img{
-    width: 500px;
-    position: block;
+
+.History_sec{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+    margin: 20px;
 }
 
-footer img{
+.History_sec h2 {
+    grid-column: 1/5;
+    align-self: center;
+    justify-self: center;
+}
+
+.p{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self:center;
+    justify-content: center;
+}
+.History_sec img{
+    margin: 20px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+section img{
+    width: 500px;
+}
+
+.Adventure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.Adventure h2{
+    grid-column: 1/6;
+    justify-self: center;
+}
+
+.Adventure figure{
+    justify-content: space-around;
+}
+figure img{
+    width: 250px;
+}
+
+footer {
+    background-color: #A44A3F;
+    padding: 1em 0;
+    margin-top: 0px;
+    
+    display: flex;
+    justify-content: center; /* Distribuye el contenido */
+    align-items: center; /* Alinea verticalmente */
+    padding: 1em;
+}
+
+footer img {
     width: 30px;
     text-decoration: none;
 }
 
-a{
+
+footer a {
     text-decoration: none;
+    margin: 0 10px; /* Espaciado entre los enlaces */
+    color: white; /* Asegura que sean visibles */
 }
+
