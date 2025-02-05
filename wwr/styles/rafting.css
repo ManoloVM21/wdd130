@@ -8,7 +8,7 @@
     --paragraph-font: 'Josefin Slab', serif;
 }
 *{
-    margin-left: 5px;
+    margin: 0;
 }
 header{
     display: grid;
@@ -97,7 +97,6 @@ section{
 .History_sec{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr;
     margin: 20px;
 }
 
@@ -124,9 +123,10 @@ section img{
     width: 500px;
 }
 
-.Adventure{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+.figures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .Adventure h2{
@@ -134,11 +134,8 @@ section img{
     justify-self: center;
 }
 
-.Adventure figure{
-    justify-content: space-around;
-}
 figure img{
-    width: 250px;
+    width: 15rem;
 }
 
 footer {
