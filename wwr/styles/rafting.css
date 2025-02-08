@@ -142,7 +142,7 @@ footer {
     background-color: #A44A3F;
     padding: 1em 0;
     margin-top: 0px;
-    
+    color: #fff;
     display: flex;
     justify-content: center; /* Distribuye el contenido */
     align-items: center; /* Alinea verticalmente */
@@ -183,10 +183,12 @@ footer a {
 /*CONTACT US CSS*/
 .contact {
     margin: 30px;
+    width: 50%;
+    justify-self: center;
 }
 .contact h2{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .centerimg{
     display: grid;
@@ -199,7 +201,7 @@ footer a {
     flex-direction: column;
     flex-wrap: wrap;
     color: rgb(0, 0, 0);
-    font-size:1.5em;
+    font-size:1.3em;
     justify-self: flex-end;
 }
 
@@ -218,7 +220,7 @@ footer a {
 
 /*FORM CSS*/
 form {
-    width: 400px;
+    width: 50%;
     justify-self: center;
     margin: 60px 10px 10px;
     padding: 20px;
@@ -271,5 +273,4 @@ button:hover{
 .radio {
     display: flex;
     flex-direction: column;
-
 }
