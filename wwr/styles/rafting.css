@@ -159,7 +159,7 @@ footer a {
 .Guides h2,
 .contact h2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 30px;
 }
 
