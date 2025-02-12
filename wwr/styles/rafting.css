@@ -7,96 +7,98 @@
     --heading-font: 'Freckle Face', serif;
     --paragraph-font: 'Josefin Slab', serif;
 }
-*{
+
+* {
     margin: 0;
 }
-header{
+
+header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content:center;
+    justify-content: center;
     text-align: left;
     padding: 1em 0;
-    background-color: #A44A3F;
+    background-color: var(--accent-2);
 }
-header img{
+
+header img {
     justify-self: center;
 }
-header nav{
+
+header nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-main{
-    background-color: #94A89A;
-    margin-bottom: 0px;
+main {
+    background-color: var(--primary-color);
 }
-.Rafting {
-    width: 100%;
-    display: block;
-}
+
 .hero {
     position: relative;
-    width: 100%; 
-    max-width: 800px; 
-    margin: 0 auto; 
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.hero h1{
+.hero h1 {
     position: absolute;
     top: 1%;
     left: 50%;
     transform: translateX(-50%);
     color: rgb(234, 234, 234);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.Rafting{
+.Rafting {
+    width: 100%;
+    display: block;
     position: relative;
     max-width: max-content;
     height: auto;
 }
 
-article{
+article {
     position: absolute;
     top: 20%;
     max-width: max-content;
-    float: inline-start;
     font-size: 1em;
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 1em;
     object-fit: cover;
-} 
-article img{
-    float: right;
-    width:300px;
 }
 
+article img {
+    float: right;
+    width: 300px;
+}
 
-.article h1{
-    font-family: 'Freckle Face';
+.article h1 {
+    font-family: var(--heading-font);
     margin: 0;
 }
 
-.article p{
-    font-family: 'Josefin Slab', serif;
+.article p {
+    font-family: var(--paragraph-font);
 }
 
-h2{
-    color: #A44A3F;
-    font-family: 'Josefin Slab';
+h2 {
+    color: var(--accent-2);
+    font-family: var(--paragraph-font);
     font-size: 200%;
 }
 
-section{
+section {
     margin-bottom: 10px;
 }
 
-.History_sec{
+.History_sec {
     margin-top: 20px;
 }
+
 .stuff {
     display: flex;
     align-content: center;
@@ -106,119 +108,103 @@ section{
 
 .History_sec h2 {
     align-self: center;
-    justify-self: center;
 }
 
-.p{
-    align-self:center;
-    justify-content: center;
-}
-.History_sec img{
+.History_sec img {
     margin: 10px;
     flex-direction: row-reverse;
     align-self: center;
-    justify-self: center;
 }
-section img{
+
+section img {
     width: 500px;
 }
 
-.figures{
+.figures {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.Adventure h2{
+.Adventure h2 {
     grid-column: 1/6;
     justify-self: center;
 }
 
-figure img{
+figure img {
     width: 15rem;
 }
 
 footer {
-    background-color: #A44A3F;
+    background-color: var(--accent-2);
     padding: 1em 0;
-    margin-top: 0px;
+    margin-top: 0;
     color: #fff;
     display: flex;
-    justify-content: center; /* Distribuye el contenido */
-    align-items: center; /* Alinea verticalmente */
-    padding: 1em;
+    justify-content: center;
+    align-items: center;
 }
 
 footer img {
     width: 30px;
-    text-decoration: none;
 }
-
 
 footer a {
     text-decoration: none;
-    margin: 0 10px; /* Espaciado entre los enlaces */
-    color: white; /* Asegura que sean visibles */
+    margin: 0 10px;
+    color: white;
 }
 
-/* CONTACT CSS */
-/*GUIDES CSS*/
-.Guides h2 {
+/* CONTACT & GUIDES */
+.Guides h2,
+.contact h2 {
     display: flex;
-    margin: 30px;
     justify-content: center;
+    margin: 30px;
 }
 
-.figures {
-    display: flex;
-    justify-self: center;
-}
-
-.figures figcaption{
-    background-color: #535252d0;
+.figures figcaption {
+    background-color: rgba(83, 82, 82, 0.82);
     color: #fff;
     padding: 3px;
     text-align: center;
 }
-/*CONTACT US CSS*/
+
 .contact {
     margin: 30px;
     width: 50%;
     justify-self: center;
 }
-.contact h2{
-    display: flex;
-    justify-content: center;
-}
-.centerimg{
+
+.centerimg {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     margin: 1em;
 }
-.textt{
-    grid-column: 1/3;
+
+.textt {
+    grid-column: 1 / 3;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    color: rgb(0, 0, 0);
-    font-size:1.3em;
+    color: black;
+    font-size: 1.3em;
     justify-self: flex-end;
 }
 
-.contact div{
+.contact div {
     display: flex;
     justify-content: center;
 }
 
-
 .iframe {
-    grid-column: 4/5;
+    grid-column: 4 / 5;
     width: 75%;
     height: auto;
-    justify-self:center;
+    justify-self: center;
 }
 
-/*FORM CSS*/
+/* FORM */
 form {
     width: 50%;
     justify-self: center;
@@ -228,43 +214,46 @@ form {
     background-color: white;
     display: grid;
 }
-.form div{
+
+.form div {
     margin: auto;
 }
+
 label, input, button, textarea {
     font-family: 'Times New Roman', Times, serif;
 }
+
 label {
     margin-bottom: 5px;
     text-align: left;
     padding-right: 1rem;
 }
-input, button,textarea {
+
+input, button, textarea {
     padding: 0.5rem;
     font-size: 1.1rem;
 }
+
 input[type="checkbox"] {
     width: 20px;
     height: 15px;
 }
-button{
-    margin: .2rem;
+
+button {
+    margin: 0.2rem;
     background-color: #333;
     color: #fff;
     border: none;
-    border-radius: .5rem;
-    padding: .5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     font-size: 1rem;
+    transition: padding 0.2s ease;
 }
-button:hover{
-    margin: .2rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: .5rem;
+
+button:hover {
     padding: 1rem;
-    font-size: 1rem;
 }
+
 .form-item {
     display: grid;
     align-items: center;
