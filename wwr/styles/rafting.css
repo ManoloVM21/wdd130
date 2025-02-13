@@ -305,7 +305,7 @@ button:hover {
     top: 10%;
 }
 
-legend{
+form h3{
     justify-self: center;
 }
 
@@ -335,3 +335,75 @@ legend{
     margin-top: 30px;
     margin-left: 20px;
 }
+.temptation-div a{
+    color: rgb(33, 55, 118);
+}
+/*TRIPS-HTML*/
+/*TRIPS MENU*/
+.trips-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trips-menu img{
+    width: 80%;
+    border: 8px solid;
+    justify-self: flex-end;
+}
+
+.trips-menu h3{
+    text-align: center;
+}
+.menu1 p {
+    font-size: 130%;
+    max-width: 70%;
+    justify-self: center;
+}
+
+.tempting2 a{
+    color: rgb(33, 55, 118);
+}
+/*TABLE*/
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    justify-self: center;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead,
+  tfoot {
+    background-color: rgb(205, 232, 244);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(5, 5, 5);
+    padding: 8px 10px;
+  }
+  
+  td:last-of-type {
+    text-align: center;
+  }
+  
+  tbody {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  tfoot th {
+    text-align: right;
+  }
+  
+  tfoot td {
+    font-weight: bold;
+  }
+  
